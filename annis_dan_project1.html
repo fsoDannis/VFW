@@ -3,9 +3,9 @@
 	
 	<head>
 		<meta charset="utf-8" />
-		<title>MaryKay Ordering List</title>
-		<meta name="Emily's Ordering List" content=" "/>
-		<meta name="MaryKay, makeup, Cosmo" content=" " />
+		<title>Daily "Things that don't get done" List</title>
+		<meta name="Morning ToDo List" content=" "/>
+		<meta name="Work, Time Warner, Etc.." content=" " />
 		<meta name="robots" content="index,follow" />
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<script src="js/main.js" type="text/javascrpt"></script>
@@ -13,17 +13,29 @@
 	
 	<body>
 		<div style="width:480px; height:680px;"> <!--Creating a section -->
-			<center><header id="newOrder"> New Order Form</header></center> <!--Making the header -->
+			<center><header id="newOrder"> What needs done today?</header></center> <!--Making the header -->
 			<form action="http://process.php" method="post" target="_blank" onsubmit="return window.confirm(&quot;You are submitting information to an external page. Are you sure?);"> <!--Makes the submit button go somewhere -->
 				<fieldset>
-				<legend>Customer Information</legend>
-					<label>Name:<input type="text" size="20"></label><br>
-					<label>Address: <input type="text" size="30"></label><br>
-					<label>City: <input type="text" size="15"></label><br>
-					<label>Zip: <input type="number" size="5" min="1" max="5"></label>
-					<label>Phone Number: <input type="number"  min="1" max="15" /></label><br>
-					<label>Email: <input type="email"></label>
+				<legend>Assignments</legend>
+						<label method>
+						<select>
+								<option value="morning">Morning</option>
+								<option value="evening">Evening</option>
+						</select>
+						</label>
+						<br>
+						<br>
+						Supervisor Name:
+						<ul>
+							<li><label><input type="radio" checked value="dan" name="sup">Dan Annis</label></li>
+							<li><label><input type="radio" checked value="ken" name="sup">Ken Senter</label></li>
+							<li><label><input type="radio" checked value="matt" name="sup">Matt Vornberg</label></li>
+							<li><label><input type="radio" checked value="kristy" name="sup">Kristy Hardin</label></li>
+							<li><label><input type="radio" checked value="fred" name="sup">Fred Lattimore</label></li>
+						</ul>
+					
 				</fieldset>
+				
 	
 	
 	
