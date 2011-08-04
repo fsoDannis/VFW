@@ -15,7 +15,15 @@
 		<div style="width:480px; height:680px;"> <!--Creating a section -->
 			<center><header id="newOrder"> New Order Form</header></center> <!--Making the header -->
 			<form action="http://process.php" method="post" target="_blank" onsubmit="return window.confirm(&quot;You are submitting information to an external page. Are you sure?);"> <!--Makes the submit button go somewhere -->
-	
+				<fieldset>
+				<legend>Customer Information</legend>
+					<label>Name:<input type="text" size="20"></label><br>
+					<label>Address: <input type="text" size="30"></label><br>
+					<label>City: <input type="text" size="15"></label><br>
+					<label>Zip: <input type="number" size="5" min="1" max="5"></label>
+					<label>Phone Number: <input type="number"  min="1" max="15" /></label><br>
+					<label>Email: <input type="email"></label>
+				</fieldset>
 	
 	
 	
