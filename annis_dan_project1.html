@@ -28,29 +28,30 @@
 						Supervisor Name:
 						<ul>
 							<li><label><input type="radio" checked value="dan" name="sup">Dan Annis</label></li>
-							<li><label><input type="radio" checked value="ken" name="sup">Ken Senter</label></li>
-							<li><label><input type="radio" checked value="matt" name="sup">Matt Vornberg</label></li>
-							<li><label><input type="radio" checked value="kristy" name="sup">Kristy Hardin</label></li>
-							<li><label><input type="radio" checked value="fred" name="sup">Fred Lattimore</label></li>
+							<li><label><input type="radio" value="ken" name="sup">Ken Senter</label></li>
+							<li><label><input type="radio" value="matt" name="sup">Matt Vornberg</label></li>
+							<li><label><input type="radio" value="kristy" name="sup">Kristy Hardin</label></li>
+							<li><label><input type="radio" value="fred" name="sup">Fred Lattimore</label></li>
 						</ul>
-					<label>What Needs Done:<input type="text"><p></p>
+					<label>What Needs Done:<input size="50" type="text"><p></p>
 					How Much Needs done?
-					<input type="range" min="0" max="5" value="0" step="1" onchange="showValue(this.value)"/>
-						<span id="range">0</span>
+					<br>
+					1<input type="range" min="1" max="5" value="1" step="1" onchange="showValue(this.value)"/>
+						<span id="range">5</span>
 						<script type="text/javascript">
-						function showValue(newValue){
-						document.getElementById("range").innerHTML=newValue;
-						}
-			</script> 
+							function showValue(newValue){
+							document.getElementById("range").innerHTML=newValue;
+							}
+						</script>
+						<br><br>
+				<label>Completion Date: </label><input id="completion" type="date"/> 
+				<br><br>
+				<label>Additional Notes:<br></label><textarea cols="55" rows="4" placeholder="Leave a note..."></textarea>
+				<br><br>
+				<input type="submit" class="submit" value="Ship it!" />
+				<br>
 				</fieldset>
-				
-	
-	
-	
-	
-	
-	
-	
+
 			</form>	
 		</div>
 	</body>
