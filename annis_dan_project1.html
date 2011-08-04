@@ -33,7 +33,15 @@
 							<li><label><input type="radio" checked value="kristy" name="sup">Kristy Hardin</label></li>
 							<li><label><input type="radio" checked value="fred" name="sup">Fred Lattimore</label></li>
 						</ul>
-					<label>What Needs Done:<input type="text">
+					<label>What Needs Done:<input type="text"><p></p>
+					How Much Needs done?
+					<input type="range" min="0" max="5" value="0" step="1" onchange="showValue(this.value)"/>
+						<span id="range">0</span>
+						<script type="text/javascript">
+						function showValue(newValue){
+						document.getElementById("range").innerHTML=newValue;
+						}
+			</script> 
 				</fieldset>
 				
 	
